@@ -1,0 +1,49 @@
+﻿<UserControl
+    x:Class="SamsungHealthStudioPlus01.Views.MenuView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="using:SamsungHealthStudioPlus01.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:prism="using:Prism.Windows.Mvvm"
+    d:DesignHeight="300"
+    d:DesignWidth="400"
+    prism:ViewModelLocator.AutoWireViewModel="true"
+    mc:Ignorable="d">
+
+    <UserControl.Resources>
+        <Style x:Key="MenuViewStyle" TargetType="StackPanel">
+            <Setter Property="Background" Value="{ThemeResource MenuViewBackground}" />
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="Foreground" Value="{ThemeResource TextColor}" />
+            <Setter Property="HorizontalAlignment" Value="Stretch" />
+        </Style>
+    </UserControl.Resources>
+
+    <StackPanel Style="{StaticResource MenuViewStyle}">
+        <controls:IconButton
+            x:Name="HomeButton"
+            x:Uid="HomeButton"
+            Click="{x:Bind ViewModel.NavigateHome}"
+            IsChecked="True">
+            <controls:IconButton.Icon>
+                <BitmapIcon UriSource="ms-appx:///Assets/Images/shealth_ic_menu_home_normal.png" />
+            </controls:IconButton.Icon>
+            <controls:IconButton.OnHoverIcon>
+                <BitmapIcon UriSource="ms-appx:///Assets/Images/shealth_ic_menu_home_select.png" />
+            </controls:IconButton.OnHoverIcon>
+        </controls:IconButton>
+        <controls:IconButton
+            x:Name="Calendar"
+            x:Uid="CalendarButton"
+            Click="{x:Bind ViewModel.NavigateFoodCalendar}">
+            <controls:IconButton.Icon>
+                <BitmapIcon UriSource="ms-appx:///Assets/Images/shopping-list.png" />
+            </controls:IconButton.Icon>
+            <controls:IconButton.OnHoverIcon>
+                <BitmapIcon UriSource="ms-appx:///Assets/Images/shopping-list_select.png" />
+            </controls:IconButton.OnHoverIcon>
+        </controls:IconButton>
+    </StackPanel>
+</UserControl>

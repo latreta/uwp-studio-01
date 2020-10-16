@@ -1,0 +1,96 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <SolidColorBrush x:Key="TextColor" Color="#070707" />
+
+    <SolidColorBrush x:Key="MenuViewBackground" Color="#FFFFFF" />
+    <SolidColorBrush x:Key="NoColor" Color="Transparent" />
+
+    <SolidColorBrush x:Key="MenuViewButtonBackgroundPointerOver" Color="#91CB50" />
+    <SolidColorBrush x:Key="MenuViewButtonForegroundPointerOver" Color="#FFFFFF" />
+    <SolidColorBrush x:Key="MenuViewButtonBorderBrushPointerOver" Color="#91CB50" />
+
+    <SolidColorBrush x:Key="MenuViewButtonBackgroundPressed" Color="#91CB53" />
+    <SolidColorBrush x:Key="MenuViewButtonForegroundPressed" Color="#FFFFFF" />
+    <SolidColorBrush x:Key="MenuViewButtonBorderBrushPressed" Color="#91CB53" />
+
+    <SolidColorBrush x:Key="MenuViewButtonBackgroundDisabled" Color="#91CB53" />
+    <SolidColorBrush x:Key="MenuViewButtonForegroundDisabled" Color="#FFFFFF" />
+    <SolidColorBrush x:Key="MenuViewButtonBorderBrushDisabled" Color="#91CB53" />
+
+    <SolidColorBrush x:Key="IconButtonForeground" Color="#91CB53"/>
+    <SolidColorBrush x:Key="IconButtonHoverForeground" Color="#FFFFFF"/>
+
+    <SolidColorBrush x:Key="FoodCalendarBackground" Color="Transparent"/>
+
+    <SolidColorBrush x:Key="DownwardBorderBrush" Color="#C5C5C5"/>
+    <SolidColorBrush x:Key="UpwardDropShadowBrushOffset1" Color="#CCC"/>
+    <SolidColorBrush x:Key="UpwardDropShadowBrushOffset0" Color="#DDD"/>
+
+    <SolidColorBrush x:Key="ButtonCardBackground" Color="Transparent"/>
+    <SolidColorBrush x:Key="ButtonCardRectStroke" Color="#AAAAAA"/>
+    <SolidColorBrush x:Key="ButtonCardRectFill" Color="#FAFAFA"/>
+    <SolidColorBrush x:Key="ButtonCardIconBackground" Color="#AAAAAA"/>
+    <SolidColorBrush x:Key="ButtonCardIconForeground" Color="#FFF"/>
+    <SolidColorBrush x:Key="ButtonCardPointerOverBorderBrush" Color="Transparent"/>
+    <SolidColorBrush x:Key="ButtonCardPointerOverBackground" Color="#93CF50"/>
+    <SolidColorBrush x:Key="ButtonCardPressedBackground" Color="#93CF50"/>
+
+
+    <SolidColorBrush x:Key="GreenColor" Color="#91CB53" />
+    <SolidColorBrush x:Key="LighterGreenColor" Color="#91CB50" />
+    <SolidColorBrush x:Key="WhiteColor" Color="#FFFFFF" />
+    <SolidColorBrush x:Key="Color2" Color="#E6E6E6" />
+    <SolidColorBrush x:Key="Color4" Color="#AAAAAA" />
+    <SolidColorBrush x:Key="Color6" Color="#91CB50" />
+    <SolidColorBrush x:Key="Color7" Color="#B3DD84" />
+    <SolidColorBrush x:Key="Color8" Color="#93CF50" />
+
+    <SolidColorBrush x:Key="AddImageTextColor" Color="#707070" />
+    <!-- Checkbox colors -->
+    <!--Unchecked Normal-->
+    <SolidColorBrush x:Key="ActivityCheckboxUncheckedForeground" Color="#AAAAAA"/>
+    <SolidColorBrush x:Key="ActivityCheckboxUncheckedBackground" Color="#FFF"/>
+    <SolidColorBrush x:Key="ActivityCheckboxUncheckedBorderBrush" Color="#AAAAAA"/>
+    <SolidColorBrush x:Key="ActivityCheckboxUncheckedStroke" Color="#AAAAAA"/>
+    <SolidColorBrush x:Key="ActivityCheckboxUncheckedCheckForeground" Color="Red"/>
+    <SolidColorBrush x:Key="ActivityCheckboxUncheckedRectFill" Color="#FFF"/>
+    <!--Unchecked Normal-->
+    <SolidColorBrush x:Key="ActivityCheckboxUncheckedPointOverForeground" Color="#AAAAAA"/>
+    <SolidColorBrush x:Key="ActivityCheckboxUncheckedPointOverBackground" Color="#FFF"/>
+    <SolidColorBrush x:Key="ActivityCheckboxUncheckedPointOverBorderBrush" Color="#C4C4C4"/>
+    <SolidColorBrush x:Key="ActivityCheckboxUncheckedPointOverStroke" Color="#C4C4C4"/>
+    <SolidColorBrush x:Key="ActivityCheckboxUncheckedPointOverCheckForeground" Color="#FFF"/>
+    <SolidColorBrush x:Key="ActivityCheckboxUncheckedPointOverRectFill" Color="#C4C4C4"/>
+    <!--Unchecked Pressed-->
+    <SolidColorBrush x:Key="ActivityCheckboxUncheckedPressedForeground" Color="#AAAAAA"/>
+    <SolidColorBrush x:Key="ActivityCheckboxUncheckedPressedBackground" Color="#FFF"/>
+    <SolidColorBrush x:Key="ActivityCheckboxUncheckedPressedBorderBrush" Color="#C4C4C4"/>
+    <SolidColorBrush x:Key="ActivityCheckboxUncheckedPressedStroke" Color="#C4C4C4"/>
+    <SolidColorBrush x:Key="ActivityCheckboxUncheckedPressedCheckForeground" Color="#FFF"/>
+    <SolidColorBrush x:Key="ActivityCheckboxUncheckedPressedRectFill" Color="#AAAAAA"/>
+    <!--Checked Normal-->
+    <SolidColorBrush x:Key="ActivityCheckboxCheckedForeground" Color="#91CB53"/>
+    <SolidColorBrush x:Key="ActivityCheckboxCheckedBackground" Color="#FFF"/>
+    <SolidColorBrush x:Key="ActivityCheckboxCheckedBorderBrush" Color="#C4C4C4"/>
+    <SolidColorBrush x:Key="ActivityCheckboxCheckedStroke" Color="#91CB53"/>
+    <SolidColorBrush x:Key="ActivityCheckboxCheckedCheckForeground" Color="#FFF"/>
+    <SolidColorBrush x:Key="ActivityCheckboxCheckedRectFill" Color="#91CB53"/>
+    <!--CheckedPointerOver-->
+    <SolidColorBrush x:Key="ActivityCheckboxCheckedPointerOverForeground" Color="#91CB53"/>
+    <SolidColorBrush x:Key="ActivityCheckboxCheckedPointerOverBackground" Color="#FFF"/>
+    <SolidColorBrush x:Key="ActivityCheckboxCheckedPointerOverBorderBrush" Color="#C4C4C4"/>
+    <SolidColorBrush x:Key="ActivityCheckboxCheckedPointerOverStroke" Color="#91CB53"/>
+    <SolidColorBrush x:Key="ActivityCheckboxCheckedPointerOverCheckForeground" Color="#FFF"/>
+    <SolidColorBrush x:Key="ActivityCheckboxCheckedPointerOverRectFill" Color="#91CB53"/>
+    <!--CheckedPressed-->
+    <SolidColorBrush x:Key="ActivityCheckboxCheckedPressedForeground" Color="#91CB53"/>
+    <SolidColorBrush x:Key="ActivityCheckboxCheckedPressedBackground" Color="#FFF"/>
+    <SolidColorBrush x:Key="ActivityCheckboxCheckedPressedBorderBrush" Color="#C4C4C4"/>
+    <SolidColorBrush x:Key="ActivityCheckboxCheckedPressedStroke" Color="#91CB53"/>
+    <SolidColorBrush x:Key="ActivityCheckboxCheckedPressedCheckForeground" Color="#FFF"/>
+    <SolidColorBrush x:Key="ActivityCheckboxCheckedPressedRectFill" Color="#91CB53"/>
+
+    <SolidColorBrush x:Key="BlackBorder" Color="#363636"/>
+
+    <SolidColorBrush x:Key="Gainsboro" Color="#E3E3E3"/>
+
+</ResourceDictionary>

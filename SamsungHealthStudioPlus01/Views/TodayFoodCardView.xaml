@@ -1,0 +1,64 @@
+﻿<UserControl
+    x:Class="SamsungHealthStudioPlus01.Views.TodayFoodCardView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:selector="using:SamsungHealthStudioPlus01.Util"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:models="using:SamsungHealthStudioPlus01.Models"
+    xmlns:controls="using:SamsungHealthStudioPlus01.Controls"
+    xmlns:prism="using:Prism.Windows.Mvvm"
+    prism:ViewModelLocator.AutoWireViewModel="true"
+    mc:Ignorable="d">
+    <UserControl.Resources>
+        <selector:FoodSelector x:Key="FoodSelector"/>
+    </UserControl.Resources>
+    <Grid>
+        <StackPanel Background="White">
+            <TextBlock
+                x:Uid="TodayFoodCardTitle"
+                Margin="20,23,0,0"
+                Style="{ThemeResource CardTitleTodayStyle}"/>
+            <Grid>
+                <GridView ItemsSource="{x:Bind ViewModel.Foods}"
+                          ItemTemplateSelector="{StaticResource FoodSelector}"
+                          HorizontalAlignment="Stretch"
+                          VerticalAlignment="Stretch" Margin="20, 20, 20, 10">
+                    <DataTemplate x:Name="AddImageTemplate" x:DataType="models:Food">
+                        <GridViewItem Height="128px" Tapped="{x:Bind AddImage}" >
+                            <Grid>
+                                
+                                <StackPanel Margin="0,0,0,0">
+
+                                    <controls:ButtonCard>
+                                        <controls:ButtonCard.Icon>
+                                            <SymbolIcon Symbol="Add" />
+                                        </controls:ButtonCard.Icon>
+                                    </controls:ButtonCard>
+
+                                </StackPanel>
+                            </Grid>
+                        </GridViewItem>
+                    </DataTemplate>
+                    <DataTemplate x:Name="FoodTemplate" x:DataType="models:Food">
+                        <GridViewItem>
+                            <StackPanel Height="128px" Width="128px">
+                                <Image Stretch="Fill" Height="128" Width="128" Source="{x:Bind Image.Path, Mode=OneWay}"/>
+                            </StackPanel>
+                        </GridViewItem>
+                    </DataTemplate>
+                </GridView>
+            </Grid>
+        </StackPanel>
+        <TextBlock
+            x:Uid="ViewMoreLabel"
+            Margin="0,0,0,10"
+            VerticalAlignment="Bottom"
+            FontSize="16"
+            Foreground="#707070"
+            Tapped="{x:Bind ViewModel.NavigateFood}"
+            TextAlignment="Center"
+            TextDecorations="Underline" />
+    </Grid>
+
+</UserControl>
